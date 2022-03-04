@@ -1,0 +1,23 @@
+curl $REPLIT_DB_URL -d 'key=value'
+curl $REPLIT_DB_URL/key
+curl "-XDELETE $REPLIT_DB_URL/key"
+curl "$REPLIT_DB_URL?prefix=key"
+{
+ "prefix":"-",
+  "token":"OTQ5MzA2Mzg1MzkxMzIxMTQ4.YiIcdw.ZXsygShHvXmOEJvfyFMrT7ODU8I"
+}
+  if(message.author.bot) return;
+  if (!message.content.startsWith(prefix)) return;
+
+  const args = message.content.slice(prefix.length).trim().split(/ +/g);
+  const command = args.shift().toLowerCase(); 
+
+if(command === "hola"){
+  message.channel.send("Hola que tal!")
+}
+if(command === "almendra"){
+  message.channel.send("Hay quien dice que tiene más calcio que la leche, más fósforo que el huevo y más hierro que la carne, lo que pasa es que para equiparar la cantidad se dispararía la cantidad y, como consecuencia, las calorías de las almendras")
+}
+});
+
+E
